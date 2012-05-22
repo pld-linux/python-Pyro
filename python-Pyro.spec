@@ -6,12 +6,14 @@
 Summary:	PYthon Remote Objects module
 Summary(pl.UTF-8):	PYthon Remote Objects
 Name:		python-%{module}
-Version:	3.11
+Version:	3.16
 Release:	1
 License:	MIT
 Group:		Development/Languages/Python
-Source0:	http://www.xs4all.nl/~irmen/pyro3/download/%{module}-%{version}.tar.gz
-# Source0-md5:	599a9f2b254f299a751f60e820a5b5d0
+
+# http://pypi.python.org/packages/source/P/Pyro/Pyro-3.16.tar.gz#md5=59d4d3f4a8786776c9d7f9051b8f1a69
+Source0:	http://pypi.python.org/packages/source/P/%{module}/%{module}-%{version}.tar.gz
+# Source0-md5:	59d4d3f4a8786776c9d7f9051b8f1a69
 URL:		http://www.xs4all.nl/~irmen/pyro3/
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
@@ -72,6 +74,8 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitescriptdir}/%{module}/ext/*.py[co]
 %dir %{py_sitescriptdir}/%{module}/EventService
 %{py_sitescriptdir}/%{module}/EventService/*.py[co]
+%dir %{py_sitescriptdir}/%{module}/test
+%{py_sitescriptdir}/%{module}/test/*.py[co]
 
 
 %if "%{py_ver}" > "2.4"
