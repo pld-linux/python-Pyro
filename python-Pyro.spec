@@ -7,7 +7,7 @@ Summary:	PYthon Remote Objects module
 Summary(pl.UTF-8):	PYthon Remote Objects
 Name:		python-%{module}
 Version:	3.16
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/Python
 
