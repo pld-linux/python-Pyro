@@ -17,7 +17,7 @@ Source0:	http://pypi.python.org/packages/source/P/%{module}/%{module}-%{version}
 URL:		http://www.xs4all.nl/~irmen/pyro3/
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
